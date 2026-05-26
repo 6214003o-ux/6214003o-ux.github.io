@@ -1,4 +1,4 @@
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+const GA_MEASUREMENT_ID = "G-8T9JLQHLKX";
 
 function isGaConfigured() {
   return GA_MEASUREMENT_ID.startsWith("G-") && !GA_MEASUREMENT_ID.includes("XXXXXXXXXX");
