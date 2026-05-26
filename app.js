@@ -12,7 +12,7 @@ function createWorkCard(work) {
     </div>
     <h3>${work.title}</h3>
     <p>${work.description}</p>
-    <a href="${work.link}" target="_blank" rel="noreferrer">${work.linkText}</a>
+    <a href="${work.link}" target="_blank" rel="noreferrer" data-analytics-event="${work.eventName}">${work.linkText}</a>
   `;
 
   return card;
@@ -32,7 +32,7 @@ function createArticleCard(article) {
     <p class="tag">${article.label}</p>
     <h4>${article.title}</h4>
     <p>${article.description}</p>
-    <a href="${article.link}" target="_blank" rel="noreferrer">記事を読む</a>
+    <a href="${article.link}" target="_blank" rel="noreferrer" data-analytics-event="${article.eventName}">記事を読む</a>
   `;
 
   return card;

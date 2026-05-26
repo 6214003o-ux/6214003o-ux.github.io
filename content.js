@@ -7,6 +7,7 @@ window.portfolioWorks = [
     link: "https://note.com/good_frog9889",
     linkText: "noteを見る",
     status: "運用中",
+    eventName: "click_note_top",
   },
   {
     label: "AI Making",
@@ -16,6 +17,7 @@ window.portfolioWorks = [
     link: "https://github.com/6214003o-ux",
     linkText: "GitHubを見る",
     status: "追加予定",
+    eventName: "click_github",
   },
   {
     label: "Video Editing",
@@ -25,6 +27,7 @@ window.portfolioWorks = [
     link: "https://note.com/good_frog9889/n/n392a94703db0",
     linkText: "実績を見る",
     status: "過去実績",
+    eventName: "click_video_portfolio",
   },
 ];
 
@@ -35,6 +38,7 @@ window.featuredArticles = [
     description:
       "追加料金がかかる技術について、日本と海外の見方の違いを整理した入口向けの記事です。",
     link: "https://note.com/good_frog9889/n/ne20da090dd7c",
+    eventName: "click_article_free_timelapse",
   },
   {
     label: "無料記事",
@@ -42,6 +46,7 @@ window.featuredArticles = [
     description:
       "男性側ができることを探している人に向けて、PRPという選択肢を位置づけ直した記事です。",
     link: "https://note.com/good_frog9889/n/n899d5d5dfc80",
+    eventName: "click_article_free_prp",
   },
   {
     label: "有料記事",
@@ -49,6 +54,7 @@ window.featuredArticles = [
     description:
       "男性妊活の全体像を、検査・生活習慣・サプリメント・避けたい要因まで広く整理した記事です。",
     link: "https://note.com/good_frog9889/n/n64e27db45a20",
+    eventName: "click_article_paid_sperm_quality",
   },
   {
     label: "有料記事",
@@ -56,5 +62,6 @@ window.featuredArticles = [
     description:
       "採卵前の不安をひとまとめにせず、何が怖いのかを分解して扱いやすくするための記事です。",
     link: "https://note.com/good_frog9889/n/nb24ecfabc734",
+    eventName: "click_article_paid_sairan_fear",
   },
 ];
