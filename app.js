@@ -1,4 +1,5 @@
 const workGrid = document.querySelector("#work-grid");
+const articleGrid = document.querySelector("#article-grid");
 
 function createWorkCard(work) {
   const card = document.createElement("article");
@@ -20,5 +21,25 @@ function createWorkCard(work) {
 if (workGrid && Array.isArray(window.portfolioWorks)) {
   window.portfolioWorks.forEach((work) => {
     workGrid.appendChild(createWorkCard(work));
+  });
+}
+
+function createArticleCard(article) {
+  const card = document.createElement("article");
+  card.className = "article-card";
+
+  card.innerHTML = `
+    <p class="tag">${article.label}</p>
+    <h4>${article.title}</h4>
+    <p>${article.description}</p>
+    <a href="${article.link}" target="_blank" rel="noreferrer">記事を読む</a>
+  `;
+
+  return card;
+}
+
+if (articleGrid && Array.isArray(window.featuredArticles)) {
+  window.featuredArticles.forEach((article) => {
+    articleGrid.appendChild(createArticleCard(article));
   });
 }
